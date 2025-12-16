@@ -1,0 +1,188 @@
+
+
+header {
+  background-color: #e67be8;
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+header h1 {
+  color: white;
+  border: 8px solid white;
+  padding: 6px 12px;
+  display: inline-block;
+  border-radius: 36px;
+
+}
+.banner {
+  position: relative;
+}
+.banner img {
+  max-width: 100%;
+  width: 2000px;
+  height: 500px;
+}
+.banner .welcome {
+  color: rgb(198, 42, 117);
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  top: 60%;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.banner h2 {
+  font-size: 74px;
+}
+.banner h2 span {
+  font-size: 1.3em;
+}
+nav {
+  background-color: #f4f4f4;
+  padding: 20px;
+  position: sticky;
+  top: 106px;
+}
+nav ul {
+  white-space: nowrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+nav li {
+  width: 25%;
+  display: inline-block;
+  font-size: 24px;
+}
+nav li a {
+  text-decoration: none;
+  color: #bd5899;
+}
+nav li a.join {
+  color: #ec31c3;
+}
+main {
+  max-width: 100%;
+  width: 1200px;
+  margin: 80px auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+article h2 {
+  color: #ff6ba9;
+  font-size: 48px;
+}
+article p {
+  line-height: 2em;
+  color: #4b4b4b;
+}
+.images {
+  text-align: center;
+  margin: 80 px 0;
+  white-space: nowrap;
+}
+.images li {
+  display: inline-block;
+  width: 40%;
+  margin: 20px 5%;
+}
+.images li img {
+  max-width: 100%;
+}
+section.join {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 60px 20px;
+  color: #4b4b4b;
+}
+.join h2 {
+  font-size: 36px;
+}
+
+footer {
+  background: #d532f6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* pseudo classes */
+
+nav li a:hover {
+  text-decoration: underline;
+  background-color: rgba(255, 0, 251, 0.41);
+  padding: 3px;
+}
+
+.images li:hover {
+  position: relative;
+  top: -4px;
+}
+form input:focus {
+  border: 4px dashes #4b4b4b;
+  outline: none;
+}
+form input:valid {
+  border: 4px solid #71d300;
+}
+nav li:first-child {
+  border: 0;
+}
+nav li:second-child {
+  border: 3px solid pink;
+}
+
+/* responsive styles*/
+@media screen and (max-width: 1400px) {
+  .banner .welcome {
+    font-size: 60px;
+  }
+  nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner .welcome h2 {
+    font-size: 28px;
+  }
+  nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner .welcome {
+    position: relative;
+    text-align: center;
+  }
+  .banner .welcome br {
+    display: none;
+  }
+  .banner .welcome span {
+    font-size: 1em;
+  }
+  nav li {
+    font-size: 18px;
+  }
+  .images li {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+  }
+}
+@media screen and (max-width: 560px) {
+  nav li {
+    font-size: 20px;
+    display: block;
+    margin: 12px 0;
+  }
+  header {
+    position: relative;
+  }
+  nav {
+    top: 0;
+  }
+}
